@@ -1,0 +1,37 @@
+//
+//  Header.pch
+//  OurCity
+//
+//  Created by 郑波波 on 16/4/27.
+//  Copyright © 2016年 郑波波. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import <BmobSDK/Bmob.h>
+#import "MJExtension.h"
+#import "NSData+ImageContentType.h"
+#import "WXApi.h"
+// RGB颜色
+#define TCColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+// 随机色
+#define TCRandomColor HWColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+/**获取设备尺寸*/
+#define CMScreenWidth [UIScreen mainScreen].bounds.size.width
+#define CMScreenHeight [UIScreen mainScreen].bounds.size.height
+/**
+ *数据归档 : 归档时期,归档时间差
+ */
+#define contactsPath  [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"time.data"]
+
+#define BMOBKEY @"e4237c71f1caf61dedd81759d6651063"
+
+#endif /* Header_pch */
