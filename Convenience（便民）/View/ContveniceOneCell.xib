@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ContveniceOneCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContveniceOneCell" rowHeight="77" id="KGk-i7-Jjw" customClass="ContveniceOneCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZ9-Y2-RZt">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="lHR-kb-gZx"/>
+                            <constraint firstAttribute="width" constant="75" id="ojU-39-H15"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lHR-kb-gZx"/>
+                                <exclude reference="ojU-39-H15"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="lHR-kb-gZx"/>
+                                <include reference="ojU-39-H15"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFG-u3-XaN">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="x0R-cD-7f7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="x0R-cD-7f7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="x0R-cD-7f7"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6Y-m2-Tzl">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="QtY-k7-Yvl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QtY-k7-Yvl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="QtY-k7-Yvl"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c6Y-m2-Tzl" firstAttribute="leading" secondItem="MZ9-Y2-RZt" secondAttribute="trailing" constant="8" id="103-rE-l8M"/>
+                    <constraint firstItem="MZ9-Y2-RZt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H87-JT-ulj"/>
+                    <constraint firstItem="fFG-u3-XaN" firstAttribute="leading" secondItem="MZ9-Y2-RZt" secondAttribute="trailing" constant="8" id="I4H-he-U40"/>
+                    <constraint firstAttribute="trailing" secondItem="c6Y-m2-Tzl" secondAttribute="trailing" constant="8" id="Kwh-nr-Pdf"/>
+                    <constraint firstItem="MZ9-Y2-RZt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NYA-Zx-auy"/>
+                    <constraint firstItem="fFG-u3-XaN" firstAttribute="top" secondItem="c6Y-m2-Tzl" secondAttribute="bottom" id="hJ4-4W-eRm"/>
+                    <constraint firstItem="c6Y-m2-Tzl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hxR-s5-Ctz"/>
+                    <constraint firstAttribute="trailing" secondItem="fFG-u3-XaN" secondAttribute="trailing" constant="8" id="mz4-Xn-SKb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="MZ9-Y2-RZt"/>
+                        <exclude reference="fFG-u3-XaN"/>
+                        <exclude reference="c6Y-m2-Tzl"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="H87-JT-ulj"/>
+                        <exclude reference="NYA-Zx-auy"/>
+                        <exclude reference="103-rE-l8M"/>
+                        <exclude reference="Kwh-nr-Pdf"/>
+                        <exclude reference="hxR-s5-Ctz"/>
+                        <exclude reference="I4H-he-U40"/>
+                        <exclude reference="hJ4-4W-eRm"/>
+                        <exclude reference="mz4-Xn-SKb"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="MZ9-Y2-RZt"/>
+                        <include reference="fFG-u3-XaN"/>
+                        <include reference="c6Y-m2-Tzl"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="H87-JT-ulj"/>
+                        <include reference="NYA-Zx-auy"/>
+                        <include reference="103-rE-l8M"/>
+                        <include reference="Kwh-nr-Pdf"/>
+                        <include reference="hxR-s5-Ctz"/>
+                        <include reference="I4H-he-U40"/>
+                        <include reference="hJ4-4W-eRm"/>
+                        <include reference="mz4-Xn-SKb"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="fFG-u3-XaN" id="Ibz-gX-YSF"/>
+                <outlet property="image" destination="MZ9-Y2-RZt" id="czW-kC-nAg"/>
+                <outlet property="nameLabel" destination="c6Y-m2-Tzl" id="ULg-5W-TtM"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="441.5"/>
+        </tableViewCell>
+    </objects>
+</document>

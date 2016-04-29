@@ -8,10 +8,6 @@
 
 import UIKit
 
-class ConvenientModel: NSObject {
-
-}
-
 
 /// 第一组section
 class convenientSectionOne: UITableViewCell {
